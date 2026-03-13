@@ -18,6 +18,7 @@ The system allows administrators to manage users, teachers to create quiz conten
 The application is built using PHP and MySQL, making it lightweight and easy to deploy on local or cloud servers.
 
 🚀 Key Features
+
 🛡️ Admin Module
 
 The administrator controls and manages the entire system.
@@ -77,6 +78,7 @@ Track scores and performance
 Submit feedback
 
 🧑‍💻 Technologies Used
+
 Frontend
 
 HTML5
@@ -101,32 +103,41 @@ XAMPP / WAMP / LAMP
 QuizHub/
 │
 ├── admin/                # Admin dashboard and management
+
 ├── assets/
 │   ├── css/              # Stylesheets
 │   └── js/               # JavaScript files
+
 │
 ├── config/
 │   └── db.php            # Database connection
+
 │
 ├── teacher/              # Teacher module
 ├── student/              # Student module
+
 │
 ├── available-courses.php
 ├── about.php
 ├── index.php             # Homepage
+
 │
 └── database.sql          # Database file
+
 ⚙️ Installation & Setup
 
 Follow these steps to run the project locally.
 
 1️⃣ Clone the Repository
+
 git clone https://github.com/your-username/quizhub.git
+
 2️⃣ Move the Project Folder
 
 Move the project folder to:
 
 xampp/htdocs/
+
 3️⃣ Setup Database
 
 Open phpMyAdmin
@@ -146,14 +157,19 @@ config/db.php
 Update credentials if needed:
 
 $host = "localhost";
+
 $user = "root";
+
 $password = "";
+
 $database = "quizhub";
+
 5️⃣ Run the Project
 
 Open your browser and visit:
 
 http://localhost/QuizHub
+
 📊 System Workflow
 
 Admin registers and manages teachers and students
@@ -164,19 +180,6 @@ Students enroll in courses and attempt quizzes
 
 The system records quiz results and history
 
-📸 Screenshots
-
-You can add screenshots like:
-
-Home Page
-Admin Dashboard
-Teacher Dashboard
-Quiz Page
-Student Results
-
-Example:
-
-![Dashboard](screenshots/dashboard.png)
 🔮 Future Improvements
 
 Online timer-based quizzes
@@ -196,10 +199,8 @@ Cloud deployment
 Sudhan Angadi
 
 GitHub:
-https://github.com/yourusername
+https://github.com/Sudhii07
 
-LinkedIn:
-(Add your LinkedIn profile link)
 
 📜 License
 
