@@ -5,114 +5,202 @@
   <img src="https://img.shields.io/badge/MySQL-Supported-blue?style=flat-square" alt="MySQL Supported">
 </p>
 
-## 📋 Overview
+🎯 QuizHub – Online Quiz Management System
 
-QuizHub is a comprehensive online quiz management system that facilitates interaction between administrators, teachers, and students. The platform enables quiz creation, management, and assessment in an educational environment.
+QuizHub is a web-based quiz management platform designed to streamline the process of creating, managing, and attempting quizzes in an educational environment. The system provides separate dashboards for Admin, Teachers, and Students, enabling efficient course management, quiz creation, and performance tracking.
 
-## ✨ Features
+The platform helps educators create structured assessments while allowing students to evaluate their knowledge through interactive quizzes.
 
-### 🛡️ Admin Features
-- 📊 Dashboard overview with key statistics
-- 👩‍🏫 Manage teachers and students
-- 📚 Course and content management
-- 🗂️ Question bank oversight
-- 🕑 Quiz history tracking
-- 💬 Feedback management
-- 🙍‍♂️ User profile management
-- ✅ Teacher approval system
-- 🖼️ Course image management
+📌 Project Overview
 
-### 👨‍🏫 Teacher Features
-- 📚 Create and manage courses
-- ✏️ Create and edit questions
-- 🔢 Support for multiple question types:
-  - Multiple Choice Questions
-  - True/False Questions
-  - Short Answer Questions
-- 📝 Quiz creation and management
-- 📈 Student performance tracking
-- 💬 Provide feedback on quiz attempts
-- 📑 Generate detailed reports
-- 🎯 Set question difficulty (Easy, Medium, Hard)
-- 📖 Add explanations for questions
-- ⏱️ Customize quiz duration
+The system allows administrators to manage users, teachers to create quiz content, and students to participate in quizzes. It provides a centralized environment where learning assessments can be conducted digitally.
 
-### 👨‍🎓 Student Features
-- 📝 Take quizzes with:
-  - Randomized question selection
-  - Dynamic difficulty levels
-  - Real-time progress tracking
-  - Timed quiz sessions
-- 📖 View course materials
-- 📊 Track progress and performance
-- 🏅 View detailed quiz history
-- 💬 Submit feedback and reviews
-- ⭐ Rate courses
-- 📚 Course enrollment system
+The application is built using PHP and MySQL, making it lightweight and easy to deploy on local or cloud servers.
 
-### 📚 Course Management
-- 👨‍🏫 Multiple teachers per course
-- 📝 Course descriptions and materials
-- 🖼️ Course image uploads
-- ⭐ Rating and review system
-- 📊 Course performance analytics
-- ✅ Student enrollment tracking
+🚀 Key Features
+🛡️ Admin Module
 
-### 🎯 Question Management
-- 🔄 Three difficulty levels: Easy, Medium, Hard
-- 📝 Multiple question types support
-- 🎲 Random question selection
-- ❓ Question explanations
-- 📊 Performance analytics by question type
-- 🏷️ Course-specific question banks
+The administrator controls and manages the entire system.
 
-### 📊 Assessment System
-- ⏱️ Customizable quiz duration
-- 📈 Real-time progress tracking
-- 🎯 Difficulty-based question selection
-- 📝 Detailed performance analytics
-- 🔄 Multiple attempt support
-- 💡 Post-quiz explanations
+Features:
 
-## 🛠️ Technical Stack
+Admin dashboard with statistics
 
-- **Frontend:** HTML5, CSS3, JavaScript, jQuery
-- **Backend:** PHP
-- **Database:** MySQL
-- **UI Framework:** Custom CSS with FontAwesome icons
-- **Security:** Session-based authentication, prepared statements
+Manage teachers and students
 
-## ⚡ Installation
+Approve or reject teacher registrations
 
-1. 📥 Clone the repository
-2. 🗄️ Import the database schema from `database/quizhub.sql`
-3. ⚙️ Configure database connection in `config/db.php`
-4. 🌐 Set up your web server (Apache/Nginx) to point to the project directory
-5. 🚀 Access the application through your web browser
+Manage courses
 
-## 🗄️ Database Configuration
+Manage question bank
 
-Update the `config/db.php` file with your database credentials.
+Monitor quiz history
 
-## 🔒 Security Features
+Manage user feedback
 
-- 🔑 Password hashing
-- 🛡️ SQL injection prevention
-- 🧹 XSS protection
-- 🗝️ Session management
-- 🏷️ Role-based access control
-- ✅ Teacher approval system
+Edit profile and account settings
 
-## 🤝 Contributing
+👨‍🏫 Teacher Module
 
-1. 🍴 Fork the repository
-2. 🌱 Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. 🚀 Push to the branch (`git push origin feature/AmazingFeature`)
-5. 📝 Open a Pull Request
+Teachers can create and manage quizzes and course content.
 
-## 🙏 Acknowledgments
+Features:
 
-- ⭐ FontAwesome for icons
-- ⭐ jQuery community
-- ⭐ PHP community
+Teacher dashboard
+
+Create and manage courses
+
+Add, edit, and delete quiz questions
+
+Upload course images
+
+Organize questions by course
+
+Track student participation
+
+👩‍🎓 Student Module
+
+Students can enroll in courses and attempt quizzes.
+
+Features:
+
+Student dashboard
+
+View available courses
+
+Attempt quizzes
+
+View quiz history
+
+Track scores and performance
+
+Submit feedback
+
+🧑‍💻 Technologies Used
+Frontend
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Backend
+
+PHP
+
+Database
+
+MySQL
+
+Server Environment
+
+XAMPP / WAMP / LAMP
+
+📂 Project Structure
+QuizHub/
+│
+├── admin/                # Admin dashboard and management
+├── assets/
+│   ├── css/              # Stylesheets
+│   └── js/               # JavaScript files
+│
+├── config/
+│   └── db.php            # Database connection
+│
+├── teacher/              # Teacher module
+├── student/              # Student module
+│
+├── available-courses.php
+├── about.php
+├── index.php             # Homepage
+│
+└── database.sql          # Database file
+⚙️ Installation & Setup
+
+Follow these steps to run the project locally.
+
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/quizhub.git
+2️⃣ Move the Project Folder
+
+Move the project folder to:
+
+xampp/htdocs/
+3️⃣ Setup Database
+
+Open phpMyAdmin
+
+Create a new database
+
+quizhub
+
+Import the provided SQL file
+
+4️⃣ Configure Database Connection
+
+Open:
+
+config/db.php
+
+Update credentials if needed:
+
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "quizhub";
+5️⃣ Run the Project
+
+Open your browser and visit:
+
+http://localhost/QuizHub
+📊 System Workflow
+
+Admin registers and manages teachers and students
+
+Teachers create courses and quiz questions
+
+Students enroll in courses and attempt quizzes
+
+The system records quiz results and history
+
+📸 Screenshots
+
+You can add screenshots like:
+
+Home Page
+Admin Dashboard
+Teacher Dashboard
+Quiz Page
+Student Results
+
+Example:
+
+![Dashboard](screenshots/dashboard.png)
+🔮 Future Improvements
+
+Online timer-based quizzes
+
+AI-based performance analysis
+
+Mobile application support
+
+Video learning integration
+
+Multi-language support
+
+Cloud deployment
+
+👨‍💻 Author
+
+Sudhan Angadi
+
+GitHub:
+https://github.com/yourusername
+
+LinkedIn:
+(Add your LinkedIn profile link)
+
+📜 License
+
+This project is created for educational and academic purposes.
